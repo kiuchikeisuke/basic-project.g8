@@ -91,7 +91,7 @@ publishArtifact in Test := false
 pomIncludeRepository := { _ => false }
 
 pomExtra := (
-  <url>https://github.com/nisshiee/$name$</url>
+  <url>https://github.com/kiuchikeisuke/$name$</url>
   <licenses>
     <license>
       <name>The MIT License (MIT)</name>
@@ -100,14 +100,14 @@ pomExtra := (
     </license>
   </licenses>
   <scm>
-    <url>git@github.com:nisshiee/$name$.git</url>
-    <connection>scm:git:git@github.com:nisshiee/$name$.git</connection>
+    <url>git@github.com:kiuchikeisuke/$name$.git</url>
+    <connection>scm:git:git@github.com:kiuchikeisuke/$name$.git</connection>
   </scm>
   <developers>
     <developer>
-      <id>nisshiee</id>
-      <name>Hirokazu Nishioka</name>
-      <url>http://nisshiee.github.com/</url>
+      <id>kiuchikeisuke</id>
+      <name>Keisuke Kiuchi</name>
+      <url>http://kiuchikeisuke.github.com/</url>
     </developer>
   </developers>)
 
@@ -118,7 +118,7 @@ pomExtra := (
 
 scalacOptions in (Compile, doc) <++= baseDirectory.map {
   bd => Seq("-sourcepath", bd.getAbsolutePath,
-            "-doc-source-url", "https://github.com/nisshiee/$name$/blob/master€{FILE_PATH}.scala",
+            "-doc-source-url", "https://github.com/kiuchikeisuke/$name$/blob/master€{FILE_PATH}.scala",
             "-implicits", "-diagrams")
 }
 
